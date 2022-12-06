@@ -150,21 +150,21 @@
   "mainAttachType": "a13f9d4c-cf93-400c-829e-76adc57d03ee",
   "requiredAttachmentTypes": [
     {
-      "id": "a13f9d4c-cf93-400c-829e-76adc57d03ee",
-      "name": "Заявление (ходатайство)",
-      "priority": 1
+      "id": "9325d901-7800-456b-be82-b6a82e4866bd",
+      "name": "Требование кредитора",
+      "priority": 0
     }
   ],
   "possibleAttachmentsTypes": [
     {
+      "id": "ad073539-3010-4a3b-9151-e3d2ad4f3a8e",
+      "name": "Судебный акт, подтверждающий обоснованность требований Кредитора",
+      "priority": 0
+    },
+    {
       "id": "3e0cc769-0cac-49c0-acc5-00e9a6030759",
       "name": "Иной документ",
       "priority": 100
-    },
-    {
-      "id": "24572992-6cfd-4290-b828-d45cabdec002",
-      "name": "Доверенность",
-      "priority": 1
     }
   ]
 }
