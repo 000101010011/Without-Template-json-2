@@ -1,0 +1,165 @@
+{
+  "id": 20,
+  "name": "Заявление СРО о предоставлении кандидатуры АУ",
+  "s3Url": "Заявление СРО о предоставлении кандидатуры АУ.odt",
+  "fields": [
+    {
+      "formName": "Court",
+      "viewName": "Суд",
+      "required": "true",
+      "type": "combobox",
+      "dataSet": "case",
+      "value": "courts",
+      "blockId": "1",
+      "colspan": "2"
+    },
+    {
+      "formName": "InstanceNumber",
+      "viewName": "Номер производства",
+      "required": "true",
+      "type": "combobox",
+      "dataSet": "",
+      "value": "",
+      "blockId": "1",
+      "linkName": "Court.Numbers",
+      "hidden": "!/AAS$/.test(Court) && !/^FAS/.test(Court) && (Court != 'VS') && (Court != 'VAS')",
+      "colspan": "2"
+    },
+    {
+      "formName": "SideModel_name",
+      "viewName": "Заявитель",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "Declarer",
+      "blockId": "2",
+      "colspan": "2"
+    },
+    {
+      "formName": "SideModel_inn",
+      "viewName": "ИНН заявителя",
+      "validator": "inn",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "IssuedByINN",
+      "blockId": "2",
+      "colspan": "2"
+    },
+    {
+      "formName": "SideModel_ogrn",
+      "viewName": "ОГРН (ОГРНИП) заявителя",
+      "validator": "ogrn",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "IssuedByOGRN",
+      "blockId": "2",
+      "colspan": "2"
+    },
+    {
+      "formName": "SideModel_addresses",
+      "viewName": "Адрес заявителя",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "IssuedByAddress",
+      "blockId": "2",
+      "colspan": "6"
+    },
+    {
+      "formName": "RepresentativeLastName",
+      "viewName": "Фамилия представителя",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "RepresentativeLastName",
+      "blockId": "2",
+      "colspan": "2"
+    },
+    {
+      "formName": "RepresentativeFirstName",
+      "viewName": "Имя представителя",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "RepresentativeFirstName",
+      "blockId": "2",
+      "colspan": "2"
+    },
+    {
+      "formName": "RepresentativeMiddleName",
+      "viewName": "Отчество представителя",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "RepresentativeMiddleName",
+      "blockId": "2",
+      "colspan": "2"
+    },
+    {
+      "formName": "Phone",
+      "viewName": "Телефон представителя",
+      "mask": "phone",
+      "required": "true",
+      "type": "text",
+      "dataSet": "esiaInfo",
+      "value": "Phone",
+      "blockId": "2",
+      "colspan": "2"
+    },
+    {
+      "formName": "Email",
+      "viewName": "Email представителя",
+      "validator": "email",
+      "required": "true",
+      "type": "text",
+      "dataSet": "esiaInfo",
+      "value": "ViewEmail",
+      "blockId": "2",
+      "colspan": "4"
+    },
+    {
+      "formName": "RecourseReadyModel_recourseTypeId",
+      "viewName": "",
+      "required": "true",
+      "type": "text",
+      "dataSet": "",
+      "value": "71e658e4-ac7f-4450-87fd-0e6f817c535d"
+    },
+    {
+      "formName": "RecourseReadyModel_subtypeId",
+      "viewName": "",
+      "required": "true",
+      "type": "text",
+      "dataSet": "",
+      "value": "470c8a83-53e3-4152-9839-ea5318ceb764"
+    }
+  ],
+  "blocks": [
+    {
+      "id": 1,
+      "name": "Дополнительные параметры"
+    },
+    {
+      "id": 2,
+      "name": "Данные о заявителе и представителе"
+    }
+  ],
+  "useTemplate": false,
+  "mainAttachType": "a13f9d4c-cf93-400c-829e-76adc57d03ee",
+  "requiredAttachmentTypes": [
+    {
+      "id": "9ea9e345-2ddf-44e9-bebd-fc15ccda4575",
+      "name": "Заявление СРО арбитражных управляющих о представлении кандидатуры арбитражного управляющего",
+      "priority": 0
+    }
+  ],
+  "possibleAttachmentsTypes": [
+    {
+      "id": "3e0cc769-0cac-49c0-acc5-00e9a6030759",
+      "name": "Иной документ",
+      "priority": 100
+    }
+  ]
+}
